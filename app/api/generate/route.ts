@@ -1,4 +1,4 @@
-import { ApiError } from '@/app/lib/error/apiError'
+import { ApiError } from '@/lib/error/apiError'
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest } from 'next/server'
 import { readFile } from 'node:fs/promises'

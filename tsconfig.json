@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@lib/*": ["./lib/*"],
+      "@guidelines/*": ["./guidelines/*"]
     }
   },
   "include": [
@@ -30,5 +33,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules","sst.config.ts"]
+  "exclude": ["node_modules", "sst.config.ts"]
 }

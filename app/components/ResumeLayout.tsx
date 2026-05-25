@@ -1,4 +1,4 @@
-import { resumeSetupType } from '../lib/entities/resumetype'
+import { resumeSetupType } from '@lib/entities/resumeType'
 import { ResumeAboutMe } from './ResumeSections/ResumeAboutMe'
 import { ResumeAward } from './ResumeSections/ResumeAward'
 import { ResumeCertification } from './ResumeSections/ResumeCertification'
@@ -7,7 +7,13 @@ import { ResumeHeader } from './ResumeSections/ResumeHeader'
 import { ResumeJob } from './ResumeSections/ResumeJobs'
 import { ResumeSkill } from './ResumeSections/ResumeSkills'
 
-const ResumeSetupConfig = (setupType: string) => {
+type ResumeSetupConfigProps = {
+  setupType?: string
+}
+
+export const ResumeSetupConfig = (props: ResumeSetupConfigProps) => {
+  const setupType = props.setupType
+
   switch (setupType) {
     case resumeSetupType.NoWorkExperience:
       return (
