@@ -1,7 +1,3 @@
 export const ResumeLayout = () => {
-    return (
-        <>
-        Resume Layout
-        </>
-    )
+  return <>Resume Layout</>
 }
